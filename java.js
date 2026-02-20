@@ -17,19 +17,11 @@
 // console.log(mul)
 let songsarr = [];
 async function getSongs() {
-  let a = await fetch("http://127.0.0.1:3000/songs/");
-  let ans = await a.text();
-  let div = document.createElement("div");
-  div.innerHTML = ans;
-  let as = div.getElementsByTagName("a");
+ let response = await fetch("./songs.json");   // fetch JSON file
+let data = await response.json();             // parse JSON
+songsarr = data.map(song => song.url);        // extract URLs
+return songsarr;
 
-  for (let index = 0; index < as.length; index++) {
-    const element = as[index];
-    if (element.href.endsWith(".mp3")) {
-      songsarr.push(element.href);
-    }
-  }
-  return songsarr;
 }
 
 let audio = new Audio();
@@ -38,8 +30,9 @@ let verifier = 0;
 
 async function songs() {
   let sgns = await getSongs();
-  console.log(sgns);
-  audio.src = songsarr[i];
+  console.log(sgns);        // check loaded songs
+  audio.src = songsarr[i];  // start with first song
+
 }
 songs();
 // function playsong() {
@@ -231,4 +224,5 @@ document.addEventListener("contextmenu", function (e) {
 //       document.body.innerHTML = "<h1 style='text-align:center;margin-top:20%;'>DevTools is not allowed 🚫</h1>";
 //     }
 //   }, 1000);
+
 // })();
