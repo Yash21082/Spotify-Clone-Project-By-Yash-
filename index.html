@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Desktop UI</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href= "favicon-spotify.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="container">
+
+            <!-- LEFT SIDE -->
+            <div style="display:flex; align-items:center;">
+                <div class="logo">
+                    <img src="spotify.svg" alt="Spotify">
+                </div>
+
+                <div class="home">
+                    <button>
+                        <img class="homesvg" src="home.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="searchbox">
+                    <img class="search" src="search.svg" alt="">
+
+                    <img class="search_ke_baju_wala_img" src="search ke baju wala img.svg" alt="">
+                    <input type="text" placeholder="What do you want to play?">
+                </div>
+                <div class="hamburger" >
+                    <img id="hamburger" src="hamburger.svg" alt="">
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div style="display:flex; align-items:center; gap: 12px;">
+                <div class="nav_right">
+                    <span>Premium</span>
+                    <span>Support</span>
+                    <span>Download</span>
+                </div>
+
+                <div class="download">
+                    <span class="standingsymb">
+                        <img src="divider.svg" alt="">
+                    </span>
+                    <img src="download.svg" alt="">
+
+                    <span class="InstallApp">Install App</span>
+                    <span class="Sign_up">Sign Up</span>
+                    <button class="Login">Login</button>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main_panel">
+        <!-- LEFT PANEL -->
+         
+        <div id="conatiner2" class="conatiner2">
+            <div class="cancel_hamburger">
+                    <img id="cancel_hamburger_img" src="cancel_hamburger.svg" alt="">
+                </div>
+            <div class="box">
+                <p>Your Library</p>
+                <button class="btnplus">
+                    <img class="plus" src="plus.svg" alt=""> Create
+                </button>
+                
+
+            </div>
+
+            <div class="con3">
+                <div class="conatiner3">
+                    <p class="con3big">Create your playlist</p>
+                    <p class="con3small">It's easy, we'll help you</p>
+                    <button class="con3button">Create playlist</button>
+
+                </div>
+
+                <div class="conatiner4">
+                    <p class="con3big">Let's find some podcasts to follow</p>
+                    <p class="con3small">We'll keep you updated on new episodes</p>
+                    <button class="con3button">Create playlist</button>
+
+                </div>
+            </div>
+            <div class="con3foot">
+                <span>Legal</span>
+                <span>Safety&Privacy Centre</span>
+                <span>Privacy Policy</span>
+                <span>Cookies</span>
+                <span>About Ads</span>
+                <span>Accessibility</span>
+                <br>
+
+            </div>
+            <div class="browserbtn">
+                <img src="browser.svg" alt="">
+                <button>
+
+                    English
+                </button>
+            </div>
+        </div>
+        <!-- Right panel -->
+        <div class="conatiner5">
+            <div class="spotify-bg">
+                <div class="con5uppertext">
+                    <span class="c5utbigtxt">Trending songs</span>
+                    <span class="c5utsmalltxt">Show all</span>
+                </div>
+                <div class="cards_conatiner">
+                   
+                    
+                    
+                    
+                    <div class="card1">
+
+                        <div class="c1img">
+                           <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e0205a0d368c0fbf69c9a76bc81" data-testid="card-image" alt="" class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP qIwhHcbG780QDz68">
+                            <div class="playbtn">
+                                <img class="plysongbtn" onclick="playsong()" src="spotifyplaybtn.svg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="lowertxt1">
+                            <span>Mohabbatein</span>
+                        </div>
+                        <div class="lowertolowertxt1">
+                            <span>
+                                <a href="">Akhein Khuli Ho Ya Ho Band</a>
+
+                                <a href="">2000 • </a>
+
+                                <a href="">Jatin-Lalit</a>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card1">
+
+                        <div class="c1img">
+                            <img xmlns="http://www.w3.org/1999/xhtml" aria-hidden="false" draggable="false"
+                                loading="lazy" src="https://i.scdn.co/image/ab67616d00001e021ce92f92a007bf5a180f88e1"
+                                data-testid="card-image" alt="" />
+                            <div class="playbtn">
+                                <img class="plysongbtn" onclick="playsong()" src="spotifyplaybtn.svg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="lowertxt1">
+                            <span>Aasma Aasma (From "Do Deewane Seher Mein")</span>
+                        </div>
+                        <div class="lowertolowertxt1">
+                            <span>
+                                <a href="">Jubin Nautiyal</a>
+
+                                <a href="">Neeti Mohan</a>
+
+                                <a href="">Hesham Abdul Wahab...</a>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card1">
+
+                        <div class="c1img">
+                            <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" data-testid="card-image" alt="" class="obD7rdENNc2n3fC0 whMS0fh9Ar4I_GaP qIwhHcbG780QDz68">
+                            <div class="playbtn">
+                                <img class="plysongbtn" onclick="playsong()" src="spotifyplaybtn.svg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="lowertxt1">
+                            <span>Chahun Main Ya Naa</span>
+                        </div>
+                        <div class="lowertolowertxt1">
+                            <span>
+                                <a href="">Palak Muchhal</a>
+
+                                <a href="">Arijit Singh</a>
+
+                                <a href="">Ashique 2</a>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card1">
+
+                        <div class="c1img">
+                            <img xmlns="http://www.w3.org/1999/xhtml" aria-hidden="false" draggable="false"
+                                loading="lazy" src="https://i.scdn.co/image/ab67616d00001e022f10008df8b756ce27e72813"
+                                data-testid="card-image" alt="" />
+                            <div class="playbtn">
+                                <img class="plysongbtn" onclick="playsong()" src="spotifyplaybtn.svg" alt="">
+
+                            </div>
+
+                        </div>
+                        <div class="lowertxt1">
+                            <span>Oo Jane Jana Dhundhe Tuje Deewana</span>
+                        </div>
+                        <div class="lowertolowertxt1">
+                            <span>
+                                <a href="">Kamaal Khan</a>
+
+                                <a href="">Jatin–Lalit</a>
+
+                                <a href="">Sameer</a>
+
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="playbar">
+                    <div class="playbarbox">
+                        <div id="songname" class="songname">
+                            songname
+                        </div>
+                        <div class="allbtns_of_prev_play_next">
+
+
+                            <img onclick="previous_button()" class="prev_btn btnanimation" src="playbar_previous.svg"
+                                alt="">
+                            <img id="play_btn" class="play_btn btnanimation" onclick="pause_play_Song()" src="playbar_play.png.png"
+                                alt="">
+                            <img onclick="next_button()" class="next_btn btnanimation" src="playbar_next.svg" alt="">
+                        </div>
+                        <div  class="songtimer">
+                            <span id="currentTime">0:00</span> /
+                            <span id="duration">0:00</span>
+                        </div>
+                        <div id = "seekbar" class="seekbar">
+                            <div id="circle" class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+
+</html>
