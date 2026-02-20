@@ -171,7 +171,7 @@ hamburger.addEventListener("click", () => {
 document
   .getElementById("cancel_hamburger_img")
   .addEventListener("click", () => {
-    document.getElementById("conatiner2").style.left = "-100%";
+    document.getElementById("conatiner2").style.left = "-1000%";
   });
 let crdcontainer = document.querySelectorAll(".cards_conatiner");
 let leftarrow = document.getElementById("leftArrow");
@@ -226,3 +226,4 @@ document.addEventListener("contextmenu", function (e) {
 //   }, 1000);
 
 // })();
+
